@@ -14,13 +14,17 @@ spec:
     spec:
       containers:
         - name: gui-app
-          # REPLACE the image below with your Docker Hub image if different
           image: amirdirin/sep2_week3_2025_bmidemo
           ports:
             - containerPort: 8080
           env:
-            # If you will run the DB inside Minikube, set DB_HOST to the db service name (e.g. "mydb")
-            # If DB is on the host, you'll need a reachable host IP (not host.docker.internal) or run the DB in the cluster.
             - name: DB_HOST
-              value: "mydb"
-            # add other env vars (DB_USER, DB_PASS, etc.) if needed
+              value: "host.docker.internal"
+            - name: DB_PORT
+              value: "3306"
+            - name: DB_USER
+              value: "root"
+            - name: DB_PASSWORD
+              value: "Test12"
+            - name: DB_NAME
+              value: "bmi_localization"

@@ -8,6 +8,6 @@ spec:
     app: gui-app
   ports:
     - protocol: TCP
-      port: 8080         # service port inside cluster
-      targetPort: 8080   # container port
-      nodePort: 30080    # node port exposed by Minikube (choose 30000-32767)
+      port: 8080         # The internal port your GUI app listens on
+      targetPort: 8080   # The containerPort from your Deployment
+      nodePort: 30080    # External Minikube port (optional, must be between 30000–32767)
