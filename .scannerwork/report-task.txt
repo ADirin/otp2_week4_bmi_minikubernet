@@ -1,0 +1,6 @@
+projectKey=BMIKubernet
+serverUrl=http://localhost:9000
+serverVersion=25.3.0.104237
+dashboardUrl=http://localhost:9000/dashboard?id=BMIKubernet
+ceTaskId=7debdbba-6478-40b2-9840-3c522d263f12
+ceTaskUrl=http://localhost:9000/api/ce/task?id=7debdbba-6478-40b2-9840-3c522d263f12
